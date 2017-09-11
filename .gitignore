@@ -1,0 +1,5 @@
+packages
+Xamarin.iOS.Akavache.Secure/bin
+Xamarin.iOS.Akavache.Secure/Debug
+Xamarin.iOS.Akavache.Secure/obj
+*.userprefs

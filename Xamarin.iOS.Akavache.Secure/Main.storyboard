@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="MgP-NC-tfI">
+                                <rect key="frame" x="140" y="20" width="121" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Y49-9S-d7a"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Local"/>
+                                    <segment title="Secure"/>
+                                </segments>
+                            </segmentedControl>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="QG9-UA-Fiz">
+                                <rect key="frame" x="0.0" y="50" width="375" height="617"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wWa-iq-uSf">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="103"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="1. Add to local cache for key &quot;Person&quot;"/>
+                                        <connections>
+                                            <action selector="button1Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Y1-FC-so8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Plh-Zl-CbU">
+                                        <rect key="frame" x="75.5" y="103" width="224" height="102.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="2. View &quot;Person&quot; in local cache"/>
+                                        <connections>
+                                            <action selector="button2Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pNc-Iz-D0m"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oxK-0v-IPf">
+                                        <rect key="frame" x="69.5" y="205.5" width="236" height="103"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="3. Delete &quot;Person&quot; in local cache"/>
+                                        <connections>
+                                            <action selector="button3Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LZw-YG-wgq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5DF-h6-a1a">
+                                        <rect key="frame" x="35" y="308.5" width="305" height="103"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="4. Add remote JSON data to secure cache"/>
+                                        <connections>
+                                            <action selector="button4Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gdh-Rb-XWU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VYq-XP-ZNt">
+                                        <rect key="frame" x="61" y="411.5" width="253" height="102.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="5. View JSON data in secure cache"/>
+                                        <connections>
+                                            <action selector="button5Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xVQ-Li-yM3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RGb-7j-wgG">
+                                        <rect key="frame" x="54.5" y="514" width="266" height="103"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="6. Delete JSON data in secure cache"/>
+                                        <connections>
+                                            <action selector="button6Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IYA-30-xZs"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="wWa-iq-uSf" secondAttribute="trailing" id="6uU-Rx-kVY"/>
+                                    <constraint firstItem="wWa-iq-uSf" firstAttribute="leading" secondItem="QG9-UA-Fiz" secondAttribute="leading" id="sPf-bh-tQA"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="MgP-NC-tfI" secondAttribute="trailing" constant="98" id="Ca2-db-qfZ"/>
+                            <constraint firstItem="MgP-NC-tfI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="EhU-tB-28p"/>
+                            <constraint firstItem="QG9-UA-Fiz" firstAttribute="top" secondItem="MgP-NC-tfI" secondAttribute="bottom" id="OKR-q5-qux"/>
+                            <constraint firstAttribute="trailing" secondItem="QG9-UA-Fiz" secondAttribute="trailing" id="TIR-Gn-8S0"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="QG9-UA-Fiz" secondAttribute="bottom" id="b8a-wo-enl"/>
+                            <constraint firstItem="MgP-NC-tfI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="124" id="bBf-VN-Hda"/>
+                            <constraint firstItem="QG9-UA-Fiz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="g5L-DE-cGN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cacheType" destination="MgP-NC-tfI" id="jrP-na-Q9K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>

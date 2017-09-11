@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.iOS.Akavache.Secure", "Xamarin.iOS.Akavache.Secure\Xamarin.iOS.Akavache.Secure.csproj", "{BA0BEF7F-B718-481A-B83C-6B65B6170CF3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA0BEF7F-B718-481A-B83C-6B65B6170CF3}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{BA0BEF7F-B718-481A-B83C-6B65B6170CF3}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{BA0BEF7F-B718-481A-B83C-6B65B6170CF3}.Release|iPhone.ActiveCfg = Release|iPhone
+		{BA0BEF7F-B718-481A-B83C-6B65B6170CF3}.Release|iPhone.Build.0 = Release|iPhone
+		{BA0BEF7F-B718-481A-B83C-6B65B6170CF3}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{BA0BEF7F-B718-481A-B83C-6B65B6170CF3}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{BA0BEF7F-B718-481A-B83C-6B65B6170CF3}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{BA0BEF7F-B718-481A-B83C-6B65B6170CF3}.Debug|iPhone.Build.0 = Debug|iPhone
+	EndGlobalSection
+EndGlobal
